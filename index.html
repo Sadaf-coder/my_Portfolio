@@ -8,12 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="main">
 
-        <div class="nav-div"><nav class="navbar">
-            <div class="logo"><span>Sadaf</span></div>
+        <div class="nav-div">
+            <nav class="navbar">
+                <div class="logo"><span>Sadaf</span></div>
 
                 <div class="nav-items">
                     <ul>
@@ -26,7 +28,8 @@
                 <div><button class="contact-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Contact Me</button></div>
 
                 <i class='bx bx-menu' id="menu-icon"></i>
-        </nav></div>
+            </nav>
+        </div>
         <div class="menu-box">
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
@@ -38,7 +41,7 @@
         </div>
         <!-- header content section -->
         <header class="header-content" id="home">
-            <div class="header-text">
+            <div class="header-text" data-aos="fade-down-right" data-aos-duration="1500">
                 <p class="name-para">Hey, I am Sadaf</p>
                 <h1>a Passionate <span class="multiple-text"> </span></h1>
                 <p class="intro-para">     
@@ -48,7 +51,7 @@
                 </p>
                 <button class="get-touch-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Get In Touch</button>
             </div>
-            <div class="header-img">
+            <div class="header-img" data-aos="fade-down-left" data-aos-duration="1500">
                 <img src="my_img.jpg" alt="my photo">
             </div>
         </header>
@@ -58,7 +61,7 @@
                 <p>My Skills</p>
                 <h2>My Expertise </h2>
             </div>
-            <div class="skill-cards">
+            <div class="skill-cards" data-aos="zoom-in-down" data-aos-duration="1500">
                 <div class="card">
                     <i class="bx bx-code"></i>
                     <h3>Web Development</h3>
@@ -86,10 +89,10 @@
         </section>
                     <!-- About Section  -->
         <section class="about-section" id="about">
-            <div class="about-img">
+            <div class="about-img" data-aos="fade-right" data-aos-duration="1500">
                 <img src="my_img.jpg" alt="my photo">
             </div>
-            <div class="about-text">
+            <div class="about-text" data-aos="fade-left" data-aos-duration="1500">
                 <p>About</p>
                 <h2>About Me</h2>
                 <p class="intro-para">     
@@ -109,7 +112,7 @@
         </section>
         <!-- projects section -->
         <div class="project-cards">
-            <div class="p-card">
+            <div class="p-card" data-aos="fade-right" data-aos-duration="1500">
                 <img src="task_02.png" alt="">
                 <h3>Fashion Hero Section</h3>
                 <p>Built a responsive hero section using HTML and CSS (Flexbox), featuring aligned text and imagery, optimized for all screen sizes.</p>
@@ -117,7 +120,7 @@
                 <a href="https://github.com/Sadaf-coder/AxoonSolutions_Internship/tree/main/Task_02"> <i class='bx bxl-github'></i> View On Github</a>
             </div>
 
-            <div class="p-card">
+            <div class="p-card" data-aos="fade-right" data-aos-duration="2000">
                 <img src="task_03.png" alt="">
                 <h3>Responsive Blog Layout</h3>
                 <p>Built a responsive blog section using Flexbox, with a header, CTA, and blog cards, optimized for all screen sizes.</p>
@@ -125,7 +128,7 @@
                 <a class="card2-a" href="https://github.com/Sadaf-coder/AxoonSolutions_Internship/tree/main/AXOON_FD_03"><i class='bx bxl-github'></i> View On Github</a>
             </div>
 
-            <div class="p-card">
+            <div class="p-card" data-aos="fade-right" data-aos-duration="2500">
                 <img src="Task_04.png" alt="">
                 <h3>Responsive Contact Section</h3>
                 <p>designed a responsive contact section with a form and contact details, styled with proper spacing for all screen sizes.</p>
@@ -133,7 +136,7 @@
                 <a href="https://github.com/Sadaf-coder/AxoonSolutions_Internship/tree/main/AXOON_FD_04"> <i class='bx bxl-github'></i> View On Github</a>
             </div>
 
-            <div class="p-card">
+            <div class="p-card" data-aos="fade-left" data-aos-duration="2500">
                 <img src="tictac toe.png" alt="">
                 <h3>Tic-Tac Toe</h3>
                 <p>Built an interactive Tic-Tac-Toe game using HTML, CSS, and JavaScript with win/draw detection on a 3x3 grid.</p>
@@ -141,7 +144,7 @@
                 <a href="https://github.com/Sadaf-coder/html-css-js-projects/tree/main/Tic_TaC_Toe_Game"><i class='bx bxl-github'></i> View On Github</a>
             </div>
 
-            <div class="p-card">
+            <div class="p-card"  data-aos="fade-left" data-aos-duration="2000">
                 <img src="Game.png" alt="">
                 <h3>Rock Paper Scissors</h3>
                 <p>Developed a Rock Paper Scissors game using HTML, CSS, and JavaScript with score tracking and real-time feedback.</p>
@@ -149,7 +152,7 @@
                 <a href="https://github.com/Sadaf-coder/html-css-js-projects/tree/main/STONE-PAPPER-SCISSORS_Game"><i class='bx bxl-github'></i> View On Github</a>
             </div>
 
-            <div class="p-card">
+            <div class="p-card" data-aos="fade-left" data-aos-duration="1500">
                 <img src="grocery_list.png" alt="">
                 <h3>Grocery List</h3>
                 <p>A web-based grocery list app built with HTML, CSS, and JavaScript. Users can easily add items to the list by clicking the 'Add Item' button, allowing them to keep track of groceries in a simple and intuitive interface.</p>
@@ -163,7 +166,7 @@
                 <p>Clients Feedback</p>
                 <h2>Customer Testimonials</h2>
             </div>
-            <div class="test-cards">
+            <div class="test-cards" data-aos="zoom-in-down" data-aos-duration="1500">
                 <!-- card-1 -->
                 <div class="card-t1">
                     <div class="stars-icon">
@@ -233,40 +236,40 @@
             </div>
         </section>
                 <!-- --------------Contact Section------------- -->
-        <section class="contact-section" id="contact">
+        <section class="contact-section" id="contact" data-aos="zoom-in-up" data-aos-duration="1500">
             <div class="contact-heading">
                 <h5>Get In Touch</5>
                 <h2>Contact me</h2>
                 <p>Feel free to reach out for collaborations or any inquiries.</p>
             </div>
             <div class="form-box">
-                <form action="">
+                <form action="https://formspree.io/f/mqabyqlp" method="POST">
                     <div class="inputs">
                         <div>
                             <label for="fname">First name</label> <br>
-                            <input type="text" class="textbox"> <br>
+                            <input type="text" class="textbox" name="fname" required> <br>
                         </div>
                         <div>
                             <label for="lname">Last name</label> <br>
-                            <input type="text" class="textbox">
+                            <input type="text" class="textbox" name="lname" required>
                         </div>
                     </div>
 
                     <div class="inputs">
                         <div>
                             <label for="email">Email</label> <br>
-                            <input type="email" class="textbox"> <br>
+                            <input type="email" class="textbox" name="email" required> <br>
                         </div>
                         <div>
                             <label for="phoneNumber">Phone Number</label> <br>
-                            <input type="phone" class="textbox">
+                            <input type="phone" class="textbox" name="phone" required>
                         </div>
                     </div>
 
                     <div class="inputs">
                         <div class="select-size">
                             <label for="choose">Choose a topic</label> <br>
-                            <select name="options" id="options" style="width: 100%;">
+                            <select name="options" id="options" style="width: 100%;" required>
                                 <option value="" hidden>Select one...</option>
                                 <option value="">Web Development</option>
                                 <option value="">Graphic Design</option>
@@ -279,12 +282,12 @@
                     <div class="inputs">
                         <div class="message-box">
                             <label for="message">Message</label>  <br>
-                        <textarea class="custom-textarea" id="" cols="67" rows="7" placeholder="Type your message..." ></textarea>
+                        <textarea class="custom-textarea" id="" cols="67" rows="7" placeholder="Type your message..." name="message" required></textarea>
                         </div>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" name="" required>
+                            <input type="checkbox" name="checkbox" required>
                             I accept the terms
                         </label>
                     </div>
@@ -296,7 +299,7 @@
         </section>
                     <!-- Footer section -->
         <footer class="footer-section">
-            <div class="footer">
+            <div class="footer" data-aos="fade-up" data-aos-duration="1500">
                 <div class="logo"><span>Sadaf</span></div>
 
                 <div class="footer-items">
@@ -316,7 +319,7 @@
                 </div>
             </div>
                         <hr style="margin: 0px 20px;">
-            <div class="footer-bottom">
+            <div class="footer-bottom" data-aos="fade-up" data-aos-duration="2000">
                 <div>
                     <p>Made with <span style="color: rgb(226, 20, 20);">❤</span> by Sadaf</p>
                 </div>
@@ -331,6 +334,11 @@
         </footer>
     </div>
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
